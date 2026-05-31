@@ -32,15 +32,15 @@ const schema = {
 allOf: [
     {
       if: { properties: { species: { const: "Canine" } } },
-      then: { properties: { breed: { enum: ["Golden Retriver", "Labrador", "Border Colie"] } } }
+      then: { properties: { breed: { enum: ["Golden Retriever", "Labrador", "Border Collie"] } } }
     },
     {
       if: { properties: { species: { const: "Feline" } } },
-      then: { properties: { breed: { enum: ["Persian", "Maincoon", "Europian Shorthair"] } } }
+      then: { properties: { breed: { enum: ["Persian", "Maine Coon", "European Shorthair"] } } }
     },
     {
       if: { properties: { species: { const: "Small Mammals" } } },
-      then: { properties: { breed: { enum: ["Hamster", "Rabid", "Mice"] } } }
+      then: { properties: { breed: { enum: ["Hamster", "Rabbit", "Mice"] } } }
     }
   ],
   
